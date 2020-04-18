@@ -451,6 +451,7 @@ duplicati_port: "8200"
 ###
 ### Sonarr
 ###
+sonarr_docker_image: linuxserver/sonarr
 sonarr_available_externally: "false"
 sonarr_data_directory: "{{ docker_home }}/sonarr/config"
 sonarr_tv_directory: "{{ tv_root }}"
