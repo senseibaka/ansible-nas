@@ -15,6 +15,7 @@
       - "{{ sonarr_tv_directory }}:/tv:rw"
       - "{{ sonarr_download_directory }}/complete:/downloads:rw"
       - "{{ sonarr_data_directory }}:/config:rw"
+      - "{{ sonarr_import_directory }}:/import:r"
     ports:
       - "{{ sonarr_port }}:8989"
     env:

@@ -157,6 +157,9 @@ docker_storage_driver: overlay2
 # This path will be mounted to backup containers, Duplicati
 samba_shares_root: /mnt/Volume3
 
+# Where manual import files will be stored
+import_root: "{{ sambda_shares_root }}/import"
+
 # Where stuff downloaded will be stored
 downloads_root: "{{ samba_shares_root }}/downloads"
 

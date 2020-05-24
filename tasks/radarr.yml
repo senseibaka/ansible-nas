@@ -15,6 +15,7 @@
       - "{{ radarr_movies_directory }}:/movies:rw"
       - "{{ radarr_download_directory }}:/downloads:rw"
       - "{{ radarr_data_directory }}:/config:rw"
+      - "{{ radarr_import_directory }}:/import:r"
     ports:
       - "{{ radarr_port }}:7878"
     env:
